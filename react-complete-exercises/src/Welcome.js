@@ -7,7 +7,7 @@ import { Age } from "./Age";
 //         return (
 //              <div>
 //                  <p>Welcome, {this.props.name ?? 'friend'}!</p>
-//                  {this.props.age > 18 && <Age age={this.props.age}/>}
+//                  {this.props.age > 18 && this.props.age < 65 && <Age age={this.props.age}/>}
 //              </div>
 //          )
 //     }
@@ -18,7 +18,7 @@ export function Welcome({name='new friend', age}){
     return (
     <div>
         <p>Welcome, {name}!</p>
-        {age && <Age age={age}/>}
+        {age>18 && age<65 && <Age age={age}/>}
     </div>
     )
 }
