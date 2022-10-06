@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { CounterDisplay } from "./CounterDisplay";
 
@@ -7,23 +7,22 @@ import { CounterDisplay } from "./CounterDisplay";
 //     state = {
 //         count : this.props.initialValue,
 //     }
-//     constructor(props) {
-//         super (props)
+//     componentDidMount() {
 //         setInterval(() => 
 //             {this.setState((state) => {
 //                 return {count: state.count + this.props.incrementInterval}
 //                 })
 //          }, this.props.incrementAmount)
 //     }
-//
-//     ESERCIZIO state-05
-//     reset(){
-//         if (this.state.count===10) {
-//             this.setState(()=>{
-//                 return {count: this.props.initialValue}
-//             })
-//         }
-//     }
+
+//     //ESERCIZIO state-05 non funzionaaa!!!
+//     // reset(){
+//     //     if (this.state.count===10) {
+//     //         this.setState(()=>{
+//     //             return {count: this.props.initialValue}
+//     //         })
+//     //     }
+//     // }
 
 //     render() {
 //         return <CounterDisplay count={this.state.count}/>
@@ -38,7 +37,13 @@ import { CounterDisplay } from "./CounterDisplay";
 export function Counter({initialValue, incrementInterval, incrementAmount}){
     const [count, setCount] = useState(initialValue)
 
-    setInterval(()=> setCount(count + incrementInterval), incrementAmount)
+    useEffect(()=>{
+        setInterval(()=> setCount(count + incrementInterval), incrementAmount)
+    }, [])
+    //Lo useEffect con il dependency array vuoto, dovrebbe simulare il 
+    //componentDidMount method che rendrizza una sola volta il mio sideEffect
+    //ma non ha lo stesso effetto del classComponent, cosa sbaglio?
+    
 
     // ESERCIZIO state-05
     function reset(){
