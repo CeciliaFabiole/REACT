@@ -27,7 +27,7 @@ Esercizi React
 - conditional-rendering-02 Modify the Welcome component so that the Age component is rendered only if the age prop is present.
 - conditional-rendering-03 Modify the Welcome component so that the Age component is rendered only if the age prop is greater than 18 and less than 65.
 - conditional-rendering-04 Modify the Welcome component so that the Age component is rendered only if the age prop is greater than 18 and less than 65 and the name prop is equal to "John".
-- conditional-rendering-05
+- conditional-rendering-05 Modify the Age component so that the "Your age is " message is rendered only if the age prop is greater than 18. Otherwise render the "You are very young!" message.
 - state-01
 - state-03
 - state-04
