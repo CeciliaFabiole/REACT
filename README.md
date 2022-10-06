@@ -18,7 +18,7 @@ Esercizi React
 - components-04 Create a new index.js file within the src folder and render the App component using the ReactDOM.render method.
 - components-06 Modify the Hello component so that it shows a p tag below the h1 tag with the message "What a beautiful day!"
 - components-07 Extract the "What a beautiful day!" message into a new component called Message and render it within the Hello component.
-- props-01
+- props-01 Create a Welcome class component that receives a name prop and renders the Welcome, {name}! message within a p tag. Render this component to you App component, passing it a name prop of your choosing.
 - props-02
 - props-03
 - props-04

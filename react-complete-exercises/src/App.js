@@ -1,5 +1,6 @@
 import React from "react";
 import {Hello} from './Hello'
+import { Welcome } from "./Welcome";
 
 //CLASS COMPONENT
 // export class App extends React.Component {
@@ -16,6 +17,7 @@ export function App(){
     return(
         <div>
             <Hello/>
+            <Welcome name='Cecilia'/>
         </div>
     )
 }
