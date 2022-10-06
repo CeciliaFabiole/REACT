@@ -14,7 +14,7 @@ Esercizi React
 ## basic-concepts
 - components-01 Create a new React application with create-react-app and remove all the code within the src folder.
 - components-02 Write a Hello class components that renders the "Hello, World!" message within an h1 tag.
-- components-03 
+- components-03 Write a class component called App that renders the Hello component within a div tag.
 - components-04
 - components-06
 - components-07
