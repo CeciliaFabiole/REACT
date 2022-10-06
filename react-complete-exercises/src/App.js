@@ -17,7 +17,7 @@ export function App(){
     return(
         <div>
             <Hello/>
-            <Welcome name='Cecilia'/>
+            <Welcome/>
         </div>
     )
 }
