@@ -12,7 +12,7 @@ Esercizi React
     quindi il primo branch che creerete da `develop` sarà il branch `basic-concepts`, dal branch `basic-concepts` creerete il branch `components-01` nel quale svolgerete il relativo esercizio.
 
 ## basic-concepts
-- components-01
+- components-01 Create a new React application with create-react-app and remove all the code within the src folder.
 - components-02
 - components-03 
 - components-04
