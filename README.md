@@ -29,7 +29,7 @@ Esercizi React
 - conditional-rendering-04 Modify the Welcome component so that the Age component is rendered only if the age prop is greater than 18 and less than 65 and the name prop is equal to "John".
 - conditional-rendering-05 Modify the Age component so that the "Your age is " message is rendered only if the age prop is greater than 18. Otherwise render the "You are very young!" message.
 - state-01 Create a Counter class component with an internal state containing a count property, initialized to 0. The Counter component should render the count property within an h1 tag, and the count property should be incremented by 1 every second;
-- state-03
+- state-03 Modify the Counter component so that the initial value of the counter, the increment interval and the increment amount are passed as props to the component.
 - state-04
 - component-lifecycle-01
 

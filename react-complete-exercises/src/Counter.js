@@ -3,20 +3,19 @@ import { useState } from "react";
 
 //CLASS COMPONENT
 // export class Counter extends React.Component {
-//     state = {
-//         count : 0,
-//     }
-
-//     constructor(props) {
-//         super (props)
-//         setInterval(() => {this.setState((state) => {
-//             return {count: state.count + 1}
-//         })
-//         }, 1000)
-//     }
-    
 //     render() {
 //         return <h1>Count: {this.state.count}</h1>
+//     }
+//     state = {
+//         count : this.props.initialValue,
+//     }
+//     constructor(props) {
+//         super (props)
+//         setInterval(() => 
+//             {this.setState((state) => {
+//                 return {count: state.count + this.props.incrementInterval}
+//                 })
+//          }, this.props.incrementAmount)
 //     }
 // }
 
@@ -25,10 +24,10 @@ import { useState } from "react";
 //and I have access to it by the class instance itself
 
 //FUNCTION COMPONENT
-export function Counter(){
-    const [count, setCount] = useState(0)
+export function Counter({initialValue, incrementInterval, incrementAmount}){
+    const [count, setCount] = useState(initialValue)
 
-    setInterval(()=> setCount(count + 1),1000)
+    setInterval(()=> setCount(count + incrementInterval), incrementAmount)
 
     return <h1>Count: {count}</h1>
 }
