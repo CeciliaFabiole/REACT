@@ -7,6 +7,7 @@ import { CounterDisplay } from "./CounterDisplay";
 //     state = {
 //         count : this.props.initialValue,
 //     }
+    
 //     componentDidMount() {
 //         setInterval(() => 
 //             {this.setState((state) => {
@@ -14,6 +15,13 @@ import { CounterDisplay } from "./CounterDisplay";
 //                 })
 //          }, this.props.incrementAmount)
 //     }
+//     //ESERCIZIO Component Lifecycle - 02
+//     componentWillUnmount(){
+
+//     }
+        //se voglio pulire l'intervallo ogni volta che il
+        //componente è nella fase di unmounting devo
+        //utilizzare componentWillUnmount, ma come funziona?
 
 //     //ESERCIZIO state-05 non funzionaaa!!!
 //     // reset(){
@@ -23,6 +31,8 @@ import { CounterDisplay } from "./CounterDisplay";
 //     //         })
 //     //     }
 //     // }
+//     //ESERCIZIO Component Lifecycle - 03
+//     //Posso farlo con ComponentDidUpdate method
 
 //     render() {
 //         return <CounterDisplay count={this.state.count}/>
@@ -44,6 +54,15 @@ export function Counter({initialValue, incrementInterval, incrementAmount}){
     //componentDidMount method che rendrizza una sola volta il mio sideEffect
     //ma non ha lo stesso effetto del classComponent, cosa sbaglio?
     
+    //ESERCIZIO Component Lifecycle - 02
+    useEffect(()=>{
+        return ()=>{
+
+        }
+    })
+    //Lo useEffect può ritornare una funzione clean-up,
+    //che simula il comprtamento di componentWillUnmount method
+    //come lo uso?
 
     // ESERCIZIO state-05
     function reset(){
@@ -52,6 +71,10 @@ export function Counter({initialValue, incrementInterval, incrementAmount}){
         }
     }
     reset()
+    //ESERCIZIO Component Lifecycle - 03
+    //Posso farlo anche con lo useEffect senza il secondo
+    //parametro, ovvero il dependency array, che simula
+    //componentDidUpdate
 
     return <CounterDisplay count={count}/>
 }
