@@ -9,5 +9,10 @@ import React from 'react';
 
 //FUNCTION COMPONENT
 export function Hello(){
-    return <h1>Hello,World!</h1>
+    return (
+        <div>
+            <h1>Hello,World!</h1>
+            <p>What a beautiful day!</p>
+        </div>
+    )
 }

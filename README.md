@@ -16,7 +16,7 @@ Esercizi React
 - components-02 Write a Hello class components that renders the "Hello, World!" message within an h1 tag.
 - components-03 Write a class component called App that renders the Hello component within a div tag.
 - components-04 Create a new index.js file within the src folder and render the App component using the ReactDOM.render method.
-- components-06
+- components-06 Modify the Hello component so that it shows a p tag below the h1 tag with the message "What a beautiful day!"
 - components-07
 - props-01
 - props-02
