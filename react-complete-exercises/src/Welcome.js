@@ -18,7 +18,7 @@ export function Welcome({name='new friend', age}){
     return (
     <div>
         <p>Welcome, {name}!</p>
-        {age>18 && <Age age={age}/>}
+        {age && <Age age={age}/>}
     </div>
     )
 }
