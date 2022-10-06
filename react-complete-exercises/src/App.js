@@ -9,6 +9,8 @@ import { Counter } from "./Counter";
 //         return (
 //             <div>
 //                 <Hello/>
+//                 <Welcome name={'John'} age={18}/>
+//                 <Counter initialValue={0} incrementInterval={1} incrementAmount={1000}/>
 //             </div>
 //         )
 //     }
@@ -20,7 +22,7 @@ export function App(){
         <div>
             <Hello/>
             <Welcome name={'John'} age={18}/>
-            <Counter initialValue={20} incrementInterval={1} incrementAmount={1000}/>
+            <Counter initialValue={0} incrementInterval={1} incrementAmount={1000}/>
         </div>
     )
 }

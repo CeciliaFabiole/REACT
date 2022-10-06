@@ -1,11 +1,9 @@
 import React from "react";
 import { useState } from "react";
+import { CounterDisplay } from "./CounterDisplay";
 
 //CLASS COMPONENT
 // export class Counter extends React.Component {
-//     render() {
-//         return <h1>Count: {this.state.count}</h1>
-//     }
 //     state = {
 //         count : this.props.initialValue,
 //     }
@@ -16,6 +14,19 @@ import { useState } from "react";
 //                 return {count: state.count + this.props.incrementInterval}
 //                 })
 //          }, this.props.incrementAmount)
+//     }
+//
+//     ESERCIZIO state-05
+//     reset(){
+//         if (this.state.count===10) {
+//             this.setState(()=>{
+//                 return {count: this.props.initialValue}
+//             })
+//         }
+//     }
+
+//     render() {
+//         return <CounterDisplay count={this.state.count}/>
 //     }
 // }
 
@@ -29,5 +40,13 @@ export function Counter({initialValue, incrementInterval, incrementAmount}){
 
     setInterval(()=> setCount(count + incrementInterval), incrementAmount)
 
-    return <h1>Count: {count}</h1>
+    // ESERCIZIO state-05
+    function reset(){
+        if (count>10) {
+            return setCount(initialValue)
+        }
+    }
+    reset()
+
+    return <CounterDisplay count={count}/>
 }
