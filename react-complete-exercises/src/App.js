@@ -17,7 +17,11 @@ export function App(){
     return(
         <div>
             <Hello/>
-            <Welcome age={22}/>
+            <Welcome name={<strong>Dimitri</strong>} age={22}/>
+            {/* Il mio tutor mi aveva consigliato di scriverla così:
+            <Welcome name={()=><strong>Dimitri</strong>} age={22}/>
+            ma non funziona. Come faccio a farla funzionare? Dove
+            la richiamo? */}
         </div>
     )
 }
