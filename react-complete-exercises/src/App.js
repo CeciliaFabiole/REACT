@@ -17,7 +17,7 @@ export function App(){
     return(
         <div>
             <Hello/>
-            <Welcome/>
+            <Welcome age={22}/>
         </div>
     )
 }

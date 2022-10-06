@@ -20,7 +20,7 @@ Esercizi React
 - components-07 Extract the "What a beautiful day!" message into a new component called Message and render it within the Hello component.
 - props-01 Create a Welcome class component that receives a name prop and renders the Welcome, {name}! message within a p tag. Render this component to you App component, passing it a name prop of your choosing.
 - props-02 What happens if no name prop is passed to the Welcome component? Can you set a default value for the name prop?
-- props-03
+- props-03 Modify the Welcome component so that it receives a second prop called age and renders it below the 'welcome' message, within a p tag after the message "Your age is ".
 - props-04
 - props-05
 - conditional-rendering-01
