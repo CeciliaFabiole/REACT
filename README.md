@@ -15,7 +15,7 @@ Esercizi React
 - components-01 Create a new React application with create-react-app and remove all the code within the src folder.
 - components-02 Write a Hello class components that renders the "Hello, World!" message within an h1 tag.
 - components-03 Write a class component called App that renders the Hello component within a div tag.
-- components-04
+- components-04 Create a new index.js file within the src folder and render the App component using the ReactDOM.render method.
 - components-06
 - components-07
 - props-01
