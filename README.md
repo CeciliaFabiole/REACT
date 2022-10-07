@@ -42,7 +42,7 @@ Esercizi React
 - forms-03 Add a "login" button to the Login component. This button should be disabled as long as the username and password inputs are empty. When clicked, the event handler attached to the button should call an onLogin function passed as a prop to the Login component, passing it the state
 - forms-04 Add a "reset" button to the Login component that clears the content of all three inputs when clicked.
 - forms-05 Implement an UncontrolledLogin component that implements all the operations of the Login component, but does so using uncontrolled components.
-- forms-06
+- forms-06 Modify the UncontrolledLogin component so that the username input is automatically focused when the component renders the first time.
 - lists-03
 - lists-04
 - lists-05

@@ -1,9 +1,9 @@
 import React from "react";
 import { Hello } from './Hello'
 // import { Counter } from "./Counter";
-import { ClickCounter } from "./ClickCounter";
-import { ClickTracker } from "./ClickTracker";
-import { InteractiveWelcome } from "./InteractiveWelcome";
+// import { ClickCounter } from "./ClickCounter";
+// import { ClickTracker } from "./ClickTracker";
+// import { InteractiveWelcome } from "./InteractiveWelcome";
 // import { Login } from "./Login";
 import { UncontrolledLogin } from "./UncontrolledLogin";
 
@@ -22,9 +22,11 @@ import { UncontrolledLogin } from "./UncontrolledLogin";
 
 //FUNCTION COMPONENT
 export function App(){
-    function onLogin(data){
-        console.log('delle info sono state inviate: ' + data.username, data.password, data.remember)
-    }
+    //per il FUNCTION COMPONENT
+    // function onLogin(data){
+    //     console.log('delle info sono state inviate: ' + data.username, data.password, data.remember)
+    // }
+    //per il CLASS COMPONENT
     // function onLogin(state){
     //     console.log('delle info sono state inviate: ' + state.username, state.password, state.remember)
     // }
@@ -32,9 +34,9 @@ export function App(){
         <div>
             <Hello/>
             {/* <Counter initialValue={0} incrementInterval={1} incrementAmount={1000}/> */}
-            <ClickCounter/>
-            <ClickTracker/>
-            <InteractiveWelcome/>
+            {/* <ClickCounter/> */}
+            {/* <ClickTracker/> */}
+            {/* <InteractiveWelcome/> */}
             {/* <Login login={(data)=>onLogin(data)}/> */}
             <UncontrolledLogin/>
         </div>

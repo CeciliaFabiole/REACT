@@ -41,8 +41,8 @@ export function UncontrolledLogin(){
     }
     return (
         <form onSubmit ={(e)=>handleInputs(e)}>
-            <input name="username"></input>
-            <input name="password" type="password"></input>
+            <input name="username" placeholder="Username" autoFocus></input>
+            <input name="password" type="password" placeholder="Password"></input>
             <input name="remember" type="checkbox"></input>
             <button type="submit">Login</button>
             <button type="reset">Reset</button>
