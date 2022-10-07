@@ -3,6 +3,7 @@ import {Hello} from './Hello'
 import { Welcome } from "./Welcome";
 // import { Counter } from "./Counter";
 import { ClickCounter } from "./ClickCounter";
+import { ClickTracker } from "./ClickTracker";
 
 //CLASS COMPONENT
 // export class App extends React.Component {
@@ -25,6 +26,7 @@ export function App(){
             <Welcome name={'John'} age={18}/>
             {/* <Counter initialValue={0} incrementInterval={1} incrementAmount={1000}/> */}
             <ClickCounter/>
+            <ClickTracker/>
         </div>
     )
 }

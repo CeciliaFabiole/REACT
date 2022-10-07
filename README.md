@@ -36,7 +36,7 @@ Esercizi React
 ## Forms-Lists-and-Styling
 - events-01 Create a ClickCounter class component that increments a counter every time a user clicks on a button. Render both the current value of the counter and the button within the ClickCounter component.
 - events-02 Extract the button within a new component called CounterButton and render it within the ClickCounter component. How can you pass the onClick event handler to the CounterButton component?
-- events-03
+- events-03 Create a ClickTracker component that renders three buttons. Implement a single event handler for all three buttons, and track of which button was pressed last. Show the last button that was pressed in an h1 tag within the ClickTracker component. Tip: you can use the event object to access the target property of the event.
 - forms-01
 - forms-02
 - forms-03
