@@ -49,7 +49,7 @@ export function Counter({initialValue, incrementInterval, incrementAmount}){
 
     useEffect(()=>{
         setInterval(()=> setCount(count + incrementInterval), incrementAmount)
-    }, [])
+    }, [count, incrementAmount, incrementInterval])
     //Lo useEffect con il dependency array vuoto, dovrebbe simulare il 
     //componentDidMount method che rendrizza una sola volta il mio sideEffect
     //ma non ha lo stesso effetto del classComponent, cosa sbaglio?

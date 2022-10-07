@@ -34,7 +34,7 @@ Esercizi React
 - component-lifecycle-01 Modify the Counter component so that the interval is initialized within the componentDidMount life cycle method instead of the constructor. Is the constructor still required?
 
 ## Forms-Lists-and-Styling
-- events-01
+- events-01 Create a ClickCounter class component that increments a counter every time a user clicks on a button. Render both the current value of the counter and the button within the ClickCounter component.
 - events-03
 - forms-01
 - forms-02
