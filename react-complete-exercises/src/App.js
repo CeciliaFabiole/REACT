@@ -4,7 +4,8 @@ import { Hello } from './Hello'
 import { ClickCounter } from "./ClickCounter";
 import { ClickTracker } from "./ClickTracker";
 import { InteractiveWelcome } from "./InteractiveWelcome";
-import { Login } from "./Login";
+// import { Login } from "./Login";
+import { UncontrolledLogin } from "./UncontrolledLogin";
 
 //CLASS COMPONENT
 // export class App extends React.Component {
@@ -34,7 +35,8 @@ export function App(){
             <ClickCounter/>
             <ClickTracker/>
             <InteractiveWelcome/>
-            <Login login={(data)=>onLogin(data)}/>
+            {/* <Login login={(data)=>onLogin(data)}/> */}
+            <UncontrolledLogin/>
         </div>
     )
 }
