@@ -1,10 +1,6 @@
 import React from "react";
+import { Colors } from "./Colors";
 import { Hello } from './Hello'
-// import { Counter } from "./Counter";
-// import { ClickCounter } from "./ClickCounter";
-// import { ClickTracker } from "./ClickTracker";
-// import { InteractiveWelcome } from "./InteractiveWelcome";
-// import { Login } from "./Login";
 import { UncontrolledLogin } from "./UncontrolledLogin";
 
 //CLASS COMPONENT
@@ -21,24 +17,13 @@ import { UncontrolledLogin } from "./UncontrolledLogin";
 // }
 
 //FUNCTION COMPONENT
+let colorsList = ['rosso', 'giallo', 'verde', 'blu', 'viola']
 export function App(){
-    //per il FUNCTION COMPONENT
-    // function onLogin(data){
-    //     console.log('delle info sono state inviate: ' + data.username, data.password, data.remember)
-    // }
-    //per il CLASS COMPONENT
-    // function onLogin(state){
-    //     console.log('delle info sono state inviate: ' + state.username, state.password, state.remember)
-    // }
     return(
         <div>
             <Hello/>
-            {/* <Counter initialValue={0} incrementInterval={1} incrementAmount={1000}/> */}
-            {/* <ClickCounter/> */}
-            {/* <ClickTracker/> */}
-            {/* <InteractiveWelcome/> */}
-            {/* <Login login={(data)=>onLogin(data)}/> */}
             <UncontrolledLogin/>
+            <Colors items={colorsList}/>
         </div>
     )
 }

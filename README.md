@@ -43,6 +43,7 @@ Esercizi React
 - forms-04 Add a "reset" button to the Login component that clears the content of all three inputs when clicked.
 - forms-05 Implement an UncontrolledLogin component that implements all the operations of the Login component, but does so using uncontrolled components.
 - forms-06 Modify the UncontrolledLogin component so that the username input is automatically focused when the component renders the first time.
+- lists-01 Create a Colors component that renders a ul tag with a li tag for each color passed in the items prop. The items prop should be an array of strings.
 - lists-03
 - lists-04
 - lists-05
