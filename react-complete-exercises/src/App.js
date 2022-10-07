@@ -39,7 +39,7 @@ export function App(){
         console.log('delle info sono state inviate: ' + data.username, data.password, data.remember)
     }
     return(
-        <Container>
+        <Container title='My App'>
             <Hello/>
             {/* <Welcome/> */}
             <UncontrolledLogin/>

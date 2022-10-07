@@ -15,6 +15,7 @@ import React from 'react';
 export function Container(props){
     return (
         <div className='container'>
+            <div className='container-title'>{props.title}</div>
             <div className="container-content">{props.children}</div>
         </div>
     )
