@@ -19,12 +19,21 @@ import React, { useState } from "react"
 //             return {items : items, newItem: ''}
 //         })
 //     }
+//      resetItem = ()=>{
+//          this.setState(()=> {
+//              let items = this.state.items
+//              items.length = 0
+//              // items.pop() per cancellarne uno alla volta
+//              return {items:items, newItem: ''}
+//          })
+//      }
 //     render() {
 //         return (
 //             <div>
 //                 <ul>{this.state.items.map((item, index) => <li key={index}>{item}</li>)}</ul>
 //                 <input name="newItem" value={this.state.newItem} onChange={(e)=> this.saveValue(e)}></input>
 //                 <button onClick={() => this.addItem()}>Add</button>
+//                 <button onClick={()=> this.resetItem()}>Reset</button>
 //             </div>
 //         )
 //     }
@@ -44,12 +53,17 @@ export function TodoList(){
         setNewItem('')
     }
 
+    function clearItem(){
+        setItems([])
+    }
+
     return(
         <div>
             <h3>Todo List</h3>
             <ul>{items.map((item, index) => <li key={index}>{item}</li>)}</ul>
             <input name='newItem' value={newItem} onChange={(e)=>saveValue(e)}/>
             <button onClick={()=>addItem()}>Add</button>
+            <button onClick={()=>clearItem()}>Reset</button>
         </div>
     )
 }
