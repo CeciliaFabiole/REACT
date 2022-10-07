@@ -5,7 +5,7 @@ import React, { useState } from "react";
 //     state = {
 //         username:"",
 //         password:"",
-//         rememberCheckbox: false,
+//         remember: false,
 //     }
 //     handleInputs = (event) => {
 //         event.preventDefault()
@@ -18,19 +18,27 @@ import React, { useState } from "react";
 //         })
 //         console.log(event.target.checked)
 //     }
+//     onLogin = () => {
+//         console.log('delle info sono state inviate: ' + this.state.username, this.state.password, this.state.remember)
+//     }
+//     componentDidUpdate(){
+//         console.log(this.state)
+//     }
 //     render() {
 //         return (
 //             <div>
 //                 <input name="username" value={this.state.username} onChange={this.handleInputs}></input>
 //                 <input name="password" type="password" value={this.state.password} onChange={this.handleInputs}></input>
-//                 <input name="rememberCheckbox" type="checkbox" checked={this.state.rememberCheckbox} onChange={this.handleInputs}></input>
+//                 <input name="remember" type="checkbox" checked={this.state.remember} onChange={this.handleInputs}></input>
+//                 <button name="loginButton" type="submit" onClick={()=>this.onLogin()} disabled={this.state.username==="" && this.state.password===""}>Login</button>
+//                 <button name="loginButton" type="submit" onClick={()=>this.props.login(this.state)} disabled={this.state.username==="" && this.state.password===""}>Login</button>
 //             </div>
 //         )
 //     }
 // }
 
 //FUNCTION COMPONENT
-export function Login(){
+export function Login({login}){
     const [data, setData] = useState({
         username:'',
         password:'',
@@ -53,6 +61,7 @@ export function Login(){
             <input name="username" value={data.username} onChange={(e)=>handleInputs(e)}></input>
             <input name="password" type="password" value={data.password} onChange={(e)=>handleInputs(e)}></input>
             <input name="remember" type="checkbox" checked={data.remember} onChange={(e)=>handleInputs(e)}></input>
+            <button name="loginButton" type="submit" onClick={()=>login(data)} disabled={data.username==="" && data.password===""}>Login</button>
         </div>
     )
 }

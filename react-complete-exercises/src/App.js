@@ -21,6 +21,12 @@ import { Login } from "./Login";
 
 //FUNCTION COMPONENT
 export function App(){
+    function onLogin(data){
+        console.log('delle info sono state inviate: ' + data.username, data.password, data.remember)
+    }
+    // function onLogin(state){
+    //     console.log('delle info sono state inviate: ' + state.username, state.password, state.remember)
+    // }
     return(
         <div>
             <Hello/>
@@ -28,7 +34,7 @@ export function App(){
             <ClickCounter/>
             <ClickTracker/>
             <InteractiveWelcome/>
-            <Login/>
+            <Login login={(data)=>onLogin(data)}/>
         </div>
     )
 }
