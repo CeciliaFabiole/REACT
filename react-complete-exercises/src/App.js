@@ -1,7 +1,7 @@
 import React from "react";
 import {Hello} from './Hello'
 import { Welcome } from "./Welcome";
-import { Counter } from "./Counter";
+// import { Counter } from "./Counter";
 import { ClickCounter } from "./ClickCounter";
 
 //CLASS COMPONENT
@@ -23,7 +23,7 @@ export function App(){
         <div>
             <Hello/>
             <Welcome name={'John'} age={18}/>
-            <Counter initialValue={0} incrementInterval={1} incrementAmount={1000}/>
+            {/* <Counter initialValue={0} incrementInterval={1} incrementAmount={1000}/> */}
             <ClickCounter/>
         </div>
     )
