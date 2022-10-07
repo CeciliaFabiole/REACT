@@ -1,6 +1,7 @@
 import React from "react";
 import { Colors } from "./Colors";
 import { Hello } from './Hello'
+import { TodoList } from "./TodoList";
 import { UncontrolledLogin } from "./UncontrolledLogin";
 
 //CLASS COMPONENT
@@ -31,6 +32,7 @@ export function App(){
             <Hello/>
             <UncontrolledLogin/>
             <Colors items={colorsList}/>
+            <TodoList/>
         </div>
     )
 }
