@@ -17,7 +17,14 @@ import { UncontrolledLogin } from "./UncontrolledLogin";
 // }
 
 //FUNCTION COMPONENT
-let colorsList = ['rosso', 'giallo', 'verde', 'blu', 'viola']
+let colorsList = [
+    {id:1, colore:'rosso'},
+    {id:2, colore:'giallo'},
+    {id:3, colore:'verde'},
+    {id:4, colore:'blu'},
+    {id:5, colore:'viola'},
+]
+
 export function App(){
     return(
         <div>
