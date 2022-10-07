@@ -18,11 +18,16 @@ import React, { useState } from "react";
 //         })
 //         console.log(event.target.checked)
 //     }
-//     onLogin = () => {
-//         console.log('delle info sono state inviate: ' + this.state.username, this.state.password, this.state.remember)
-//     }
+    
 //     componentDidUpdate(){
 //         console.log(this.state)
+//     }
+//     handleReset = () => {
+//         this.setState({
+//             username:'',
+//             password:'',
+//             remember: false,
+//         })
 //     }
 //     render() {
 //         return (
@@ -30,8 +35,8 @@ import React, { useState } from "react";
 //                 <input name="username" value={this.state.username} onChange={this.handleInputs}></input>
 //                 <input name="password" type="password" value={this.state.password} onChange={this.handleInputs}></input>
 //                 <input name="remember" type="checkbox" checked={this.state.remember} onChange={this.handleInputs}></input>
-//                 <button name="loginButton" type="submit" onClick={()=>this.onLogin()} disabled={this.state.username==="" && this.state.password===""}>Login</button>
 //                 <button name="loginButton" type="submit" onClick={()=>this.props.login(this.state)} disabled={this.state.username==="" && this.state.password===""}>Login</button>
+//                 <button onClick={this.handleReset}>Reset</button>
 //             </div>
 //         )
 //     }
@@ -55,6 +60,15 @@ export function Login({login}){
             }
         })
     }
+    function handleReset(){
+        setData(()=> {
+            return {
+                username:'',
+                password:'',
+                remember:false,
+            }
+        })
+    }
 
     return (
         <div>
@@ -62,6 +76,7 @@ export function Login({login}){
             <input name="password" type="password" value={data.password} onChange={(e)=>handleInputs(e)}></input>
             <input name="remember" type="checkbox" checked={data.remember} onChange={(e)=>handleInputs(e)}></input>
             <button name="loginButton" type="submit" onClick={()=>login(data)} disabled={data.username==="" && data.password===""}>Login</button>
+            <button onClick={()=>handleReset()}>Reset</button>
         </div>
     )
 }
