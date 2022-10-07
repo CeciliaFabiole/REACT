@@ -51,7 +51,7 @@ Esercizi React
 - lists-06 Modify the TodoList by adding a "remove" button to each li tag. When clicked, the event handler should remove corresponding item from the items array.
 - styling-components-01 Create an index.css file and import it within the index.js file. Add a .welcome class to the Welcome component that changes its background color and adds a border.
                         Modify the Counter component from Events 01 by styling the counter display using an inline style attribute
-- styling-components-03
+- styling-components-03 Modify the Login component from Forms 03 so that the "login" button background color is "red" when the inputted password's length is shorter than 8 characters, green otherwise.
 
 ## Composition
 - component-composition-02

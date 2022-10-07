@@ -5,6 +5,7 @@ import React from "react";
 // import { UncontrolledLogin } from "./UncontrolledLogin";
 import { Welcome } from "./Welcome"
 import { Counter } from "./Counter"
+import { Login } from "./Login";
 
 //CLASS COMPONENT
 // export class App extends React.Component {
@@ -20,15 +21,18 @@ import { Counter } from "./Counter"
 // }
 
 //FUNCTION COMPONENT
-let colorsList = [
-    {id:1, colore:'rosso'},
-    {id:2, colore:'giallo'},
-    {id:3, colore:'verde'},
-    {id:4, colore:'blu'},
-    {id:5, colore:'viola'},
-]
+// let colorsList = [
+//     {id:1, colore:'rosso'},
+//     {id:2, colore:'giallo'},
+//     {id:3, colore:'verde'},
+//     {id:4, colore:'blu'},
+//     {id:5, colore:'viola'},
+// ]
 
 export function App(){
+    function onLogin(data){
+        console.log('delle info sono state inviate: ' + data.username, data.password, data.remember)
+    }
     return(
         <div>
             {/* <Hello/> */}
@@ -36,6 +40,7 @@ export function App(){
             {/* <UncontrolledLogin/> */}
             {/* <Colors items={colorsList}/> */}
             {/* <TodoList/> */}
+            <Login login={(data)=>onLogin(data)}/>
             <Counter/>
         </div>
     )

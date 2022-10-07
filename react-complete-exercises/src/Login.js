@@ -69,13 +69,15 @@ export function Login({login}){
             }
         })
     }
-
+    const MyStyle = {
+            backgroundColor: data.password.length < 8 ? 'red' : 'green',
+    }
     return (
         <div>
             <input name="username" value={data.username} onChange={(e)=>handleInputs(e)}></input>
             <input name="password" type="password" value={data.password} onChange={(e)=>handleInputs(e)}></input>
             <input name="remember" type="checkbox" checked={data.remember} onChange={(e)=>handleInputs(e)}></input>
-            <button name="loginButton" type="submit" onClick={()=>login(data)} disabled={data.username==="" && data.password===""}>Login</button>
+            <button name="loginButton" type="submit" onClick={()=>login(data)} disabled={data.username==="" && data.password===""} style={MyStyle}>Login</button>
             <button onClick={()=>handleReset()}>Reset</button>
         </div>
     )
