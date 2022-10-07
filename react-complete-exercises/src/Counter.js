@@ -43,7 +43,7 @@ import { CounterDisplay } from "./CounterDisplay";
 //and I have access to it by the class instance itself
 
 //FUNCTION COMPONENT
-export function Counter({initialValue, incrementInterval, incrementAmount}){
+export function Counter({initialValue=0, incrementInterval=1, incrementAmount=1000}){
     const [count, setCount] = useState(initialValue)
 
     useEffect(()=>{
@@ -74,6 +74,10 @@ export function Counter({initialValue, incrementInterval, incrementAmount}){
     //Posso farlo anche con lo useEffect senza il secondo
     //parametro, ovvero il dependency array, che simula
     //componentDidUpdate
-
-    return <CounterDisplay count={count}/>
+    
+    return (
+        <div style={{background:'yellow'}}>
+            <CounterDisplay count={count}/>
+        </div>
+    )
 }

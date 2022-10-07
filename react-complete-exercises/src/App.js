@@ -1,8 +1,10 @@
 import React from "react";
-import { Colors } from "./Colors";
-import { Hello } from './Hello'
-import { TodoList } from "./TodoList";
-import { UncontrolledLogin } from "./UncontrolledLogin";
+// import { Colors } from "./Colors";
+// import { Hello } from './Hello'
+// import { TodoList } from "./TodoList";
+// import { UncontrolledLogin } from "./UncontrolledLogin";
+import { Welcome } from "./Welcome"
+import { Counter } from "./Counter"
 
 //CLASS COMPONENT
 // export class App extends React.Component {
@@ -29,10 +31,12 @@ let colorsList = [
 export function App(){
     return(
         <div>
-            <Hello/>
-            <UncontrolledLogin/>
-            <Colors items={colorsList}/>
-            <TodoList/>
+            {/* <Hello/> */}
+            <Welcome/>
+            {/* <UncontrolledLogin/> */}
+            {/* <Colors items={colorsList}/> */}
+            {/* <TodoList/> */}
+            <Counter/>
         </div>
     )
 }

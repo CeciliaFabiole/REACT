@@ -1,6 +1,7 @@
 import React from "react";
 import {App} from './App'
 import ReactDOM from "react-dom/client";
+import './index.css'
 
 // const appElement = <App/>
 // const root = document.querySelector('#root') //div id attribute in public/index.html

@@ -16,7 +16,7 @@ import { Age } from "./Age";
 //FUNCTION COMPONENT
 export function Welcome({name='new friend', age}){
     return (
-    <div>
+    <div className="welcome">
         <p>Welcome, {name}!</p>
         <Age age={age}/>
     </div>
