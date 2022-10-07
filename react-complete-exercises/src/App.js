@@ -1,9 +1,9 @@
 import React from "react";
-import {Hello} from './Hello'
-import { Welcome } from "./Welcome";
+import { Hello } from './Hello'
 // import { Counter } from "./Counter";
 import { ClickCounter } from "./ClickCounter";
 import { ClickTracker } from "./ClickTracker";
+import { InteractiveWelcome } from "./InteractiveWelcome";
 
 //CLASS COMPONENT
 // export class App extends React.Component {
@@ -23,10 +23,10 @@ export function App(){
     return(
         <div>
             <Hello/>
-            <Welcome name={'John'} age={18}/>
             {/* <Counter initialValue={0} incrementInterval={1} incrementAmount={1000}/> */}
             <ClickCounter/>
             <ClickTracker/>
+            <InteractiveWelcome/>
         </div>
     )
 }
