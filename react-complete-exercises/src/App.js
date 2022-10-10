@@ -50,7 +50,7 @@ export function App(){
             <Login login={(data)=>onLogin(data)}/>
             {/* <Counter/> */}
             <Language/>
-            <Sum numbers={[1,2,3,4,5,6,7,8,9]}/>
+            <Sum/>
         </Container>
     )
 }
