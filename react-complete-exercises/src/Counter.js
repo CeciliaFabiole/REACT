@@ -38,46 +38,24 @@ import { CounterDisplay } from "./CounterDisplay";
 //     }
 // }
 
-//ESERCIZIO state-02
-//Should be an object, state is an object which can be filled with any kind of data, I can also insert a function
-//and I have access to it by the class instance itself
-
 //FUNCTION COMPONENT
 export function Counter({initialValue=0, incrementInterval=1, incrementAmount=1000}){
     const [count, setCount] = useState(initialValue)
 
     useEffect(()=>{
-        setInterval(()=> setCount(count + incrementInterval), incrementAmount)
-    }, [count, incrementAmount, incrementInterval])
-    //Lo useEffect con il dependency array vuoto, dovrebbe simulare il 
-    //componentDidMount method che rendrizza una sola volta il mio sideEffect
-    //ma non ha lo stesso effetto del classComponent, cosa sbaglio?
-    
-    //ESERCIZIO Component Lifecycle - 02
-    useEffect(()=>{
+        setInterval(()=> setCount(() => count + incrementInterval), incrementAmount)
+        console.log('I have mounted')
         return ()=>{
-
+            console.log('I have unmounted')
         }
-    })
-    //Lo useEffect può ritornare una funzione clean-up,
-    //che simula il comprtamento di componentWillUnmount method
-    //come lo uso?
+    }, [count, incrementAmount, incrementInterval])
 
-    // ESERCIZIO state-05
-    function reset(){
-        if (count>10) {
-            return setCount(initialValue)
-        }
-    }
-    reset()
-    //ESERCIZIO Component Lifecycle - 03
-    //Posso farlo anche con lo useEffect senza il secondo
-    //parametro, ovvero il dependency array, che simula
-    //componentDidUpdate
-    
     return (
         <div style={{background:'yellow'}}>
             <CounterDisplay count={count}/>
         </div>
     )
 }
+
+// Perché ogni volta che aumenta di uno ricomincia dall'initialValue, 
+// invece di prendere il valore precedente?

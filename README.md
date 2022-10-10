@@ -69,7 +69,7 @@ Esercizi React
 - useState-02 Rewrite the Login component from Forms 03 as a function component, and use the useState hook to track the state of the username, password and remember inputs. Tip: you can use useState more than once.
 - useState-03 Rewrite the TodoList component from Lists 03 as a function component, and use the useState hook to track the state of the items array.
 - useEffect-01 Add a side effect to the ClickCounter component from useState 01 that calls a onCounterChange function with the current value of the counter every time value of the counter changes. The function should be received as a prop.
-- useEffect-02
+- useEffect-02 Rewrite the Counter component from State 1 as a function component and add a side effect that initializes the interval as soon as the component renders, and clears it when the component unmounts.
 - useEffect-03
 - useEffect-04
 - custom-hooks-01
