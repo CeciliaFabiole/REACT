@@ -59,7 +59,7 @@ Esercizi React
 - render-props-01 Modify the TodoList component so that, instead of rendering the items array within the ul tag, it calls the function passed to its render prop, passing it the items array as a parameter, as well as the function required to delete the item. Pass a render prop to the TodoList component to correctly render and interact with the items array.
 - render-props-02 Change the TodoList component so that instead of using the render prop it uses the children prop. How does this affect the component in which the TodoList component is rendered?
 - context-01 Create a LanguageContext and wrap a DisplayLanguage component within its provider. Add a select tag to the component containing the DisplayLanguage component that allows the user to select the language, and pass it as a value to the Provider.
-- context-02
+- context-02 Consume the LanguageContext within the DisplayLanguage component by using the context consumer, and show the selected language in an h1 tag.
 
 ## Function-components-and-hooks
 - function Components - 01
