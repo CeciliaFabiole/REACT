@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { CounterButton } from './CounterButton';
 
 //CLASS COMPONENT
@@ -21,8 +21,12 @@ import { CounterButton } from './CounterButton';
 // }
 
 //FUNCTION COMPONENT
-export function ClickCounter(){
+export function ClickCounter({onCounterChange}){
     const [counter, setCounter] = useState(0)
+
+    useEffect(()=>{
+        return onCounterChange(counter)
+    }, [counter])
 
     function handleCounterIncrement(){
         setCounter(() => counter + 1)
