@@ -1,14 +1,15 @@
 import React from "react";
 import { Colors } from "./Colors";
-import { Hello } from './Hello'
-import { TodoList } from "./TodoList";
-import { UncontrolledLogin } from "./UncontrolledLogin";
+// import { Hello } from './Hello'
+// import { TodoList } from "./TodoList";
+// import { UncontrolledLogin } from "./UncontrolledLogin";
 import { Welcome } from "./Welcome"
 // import { Counter } from "./Counter"
 import { Login } from "./Login";
 import { Container } from "./Container";
 import { Language } from './Language'
-import { Sum } from "./Sum";
+// import { Sum } from "./Sum";
+import { ClickCounter } from "./ClickCounter";
 
 //CLASS COMPONENT
 // export class App extends React.Component {
@@ -42,15 +43,16 @@ export function App(){
     }
     return(
         <Container title='My App'>
-            <Hello/>
-            <Welcome age={22} name="Cecilia"/>
+            {/* <Hello/> */}
+            {/* <Welcome age={22} name="Cecilia"/> */}
             {/* <UncontrolledLogin/> */}
             <Colors items={colorsList}/>
-            <TodoList>{(items, removeItem)=> items.map((item, index) => <li key={index}>{item}<button onClick={()=>removeItem(index)}>x</button></li>)}</TodoList>
+            {/* <TodoList>{(items, removeItem)=> items.map((item, index) => <li key={index}>{item}<button onClick={()=>removeItem(index)}>x</button></li>)}</TodoList> */}
             <Login login={(data)=>onLogin(data)}/>
             {/* <Counter/> */}
             <Language/>
-            <Sum/>
+            {/* <Sum/> */}
+            <ClickCounter/>
         </Container>
     )
 }

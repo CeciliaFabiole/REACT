@@ -65,7 +65,7 @@ Esercizi React
 - function-components-01 Rewrite the Welcome component to be a function component.
 - function-components-02 Write a Sum function component that receives a numbers prop (expected to be an array of numbers) and renders the sum of all numbers in the array within a h1 tag.
 - function-components-03 What happens if the numbers prop of the Sum component is not set? How can you set a default value for this prop?
-- useState-01
+- useState-01 Rewrite the ClickCounter component from Events 01 as a function component, and use the useState hook to track the state of the counter.
 - useState-02
 - useEffect-01
 - useEffect-02
