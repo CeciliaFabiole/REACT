@@ -8,6 +8,7 @@ import { Welcome } from "./Welcome"
 import { Login } from "./Login";
 import { Container } from "./Container";
 import { Language } from './Language'
+import { Sum } from "./Sum";
 
 //CLASS COMPONENT
 // export class App extends React.Component {
@@ -49,6 +50,7 @@ export function App(){
             <Login login={(data)=>onLogin(data)}/>
             {/* <Counter/> */}
             <Language/>
+            <Sum numbers={[1,2,3,4,5,6,7,8,9]}/>
         </Container>
     )
 }
