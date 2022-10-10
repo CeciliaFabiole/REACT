@@ -62,9 +62,9 @@ Esercizi React
 - context-02 Consume the LanguageContext within the DisplayLanguage component by using the context consumer, and show the selected language in an h1 tag.
 
 ## Function-components-and-hooks
-- function Components - 01 Rewrite the Welcome component to be a function component.
-- function Components - 02
-- function Components - 03
+- function-components-01 Rewrite the Welcome component to be a function component.
+- function-components-02
+- function-components-03
 - useState-01
 - useState-02
 - useEffect-01
