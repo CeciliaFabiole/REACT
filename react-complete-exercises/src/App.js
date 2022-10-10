@@ -1,7 +1,7 @@
 import React from "react";
 import { Colors } from "./Colors";
 // import { Hello } from './Hello'
-// import { TodoList } from "./TodoList";
+import { TodoList } from "./TodoList";
 // import { UncontrolledLogin } from "./UncontrolledLogin";
 import { Welcome } from "./Welcome"
 // import { Counter } from "./Counter"
@@ -47,12 +47,12 @@ export function App(){
             {/* <Welcome age={22} name="Cecilia"/> */}
             {/* <UncontrolledLogin/> */}
             <Colors items={colorsList}/>
-            {/* <TodoList>{(items, removeItem)=> items.map((item, index) => <li key={index}>{item}<button onClick={()=>removeItem(index)}>x</button></li>)}</TodoList> */}
+            <TodoList>{(items, removeItem)=> items.map((item, index) => <li key={index}>{item}<button onClick={()=>removeItem(index)}>x</button></li>)}</TodoList>
             <Login login={(data)=>onLogin(data)}/>
             {/* <Counter/> */}
-            <Language/>
+            {/* <Language/> */}
             {/* <Sum/> */}
-            <ClickCounter/>
+            {/* <ClickCounter/> */}
         </Container>
     )
 }
