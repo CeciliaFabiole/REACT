@@ -75,7 +75,7 @@ export function TodoList(props){
     return(
         <div>
             <h3>Todo List</h3>
-            <ul>{props.render(items, removeItem)}</ul>
+            <ul>{props.children(items, removeItem)}</ul>
             <input name='newItem' value={newItem} onChange={(e)=>saveValue(e)}/>
             <button onClick={()=>addItem()}>Add</button>
             <button onClick={()=>clearItem()}>Reset</button>

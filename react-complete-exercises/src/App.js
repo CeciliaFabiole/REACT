@@ -44,7 +44,9 @@ export function App(){
             {/* <Welcome/> */}
             <UncontrolledLogin/>
             <Colors items={colorsList}/>
-            <TodoList render={(items, removeItem)=> items.map((item, index) => <li key={index}>{item}<button onClick={()=>removeItem(index)}>x</button></li>)}/>
+            <TodoList>
+                {(items, removeItem)=> items.map((item, index) => <li key={index}>{item}<button onClick={()=>removeItem(index)}>x</button></li>)}
+            </TodoList>
             <Login login={(data)=>onLogin(data)}/>
             <Counter/>
         </Container>

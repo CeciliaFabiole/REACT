@@ -57,6 +57,7 @@ Esercizi React
 - component-composition-01 Create a Container component that renders its children within a div tag. Have the div tag use a white background and a red border, either with a custom class or by using tailwindcss.
 - component-composition-02 Modify the Container component so that it can display a title received within the title prop.
 - render-props-01 Modify the TodoList component so that, instead of rendering the items array within the ul tag, it calls the function passed to its render prop, passing it the items array as a parameter, as well as the function required to delete the item. Pass a render prop to the TodoList component to correctly render and interact with the items array.
+- render-props-02 Change the TodoList component so that instead of using the render prop it uses the children prop. How does this affect the component in which the TodoList component is rendered?
 - context-01
 - context-02
 
