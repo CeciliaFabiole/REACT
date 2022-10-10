@@ -44,7 +44,7 @@ export function App(){
             {/* <Welcome/> */}
             <UncontrolledLogin/>
             <Colors items={colorsList}/>
-            <TodoList/>
+            <TodoList render={(items, removeItem)=> items.map((item, index) => <li key={index}>{item}<button onClick={()=>removeItem(index)}>x</button></li>)}/>
             <Login login={(data)=>onLogin(data)}/>
             <Counter/>
         </Container>

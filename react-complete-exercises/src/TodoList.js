@@ -37,7 +37,7 @@ import React, { useState } from "react"
 //     render() {
 //         return (
 //             <div>
-//                 <ul>{this.state.items.map((item, index) => <li key={index}>{item}<button onClick={()=>this.removeItem(index)}>x</button></li>)}</ul>
+//                 <ul>{this.props.render(this.state.items, this.removeItem)}</ul>
 //                 <input name="newItem" value={this.state.newItem} onChange={(e)=> this.saveValue(e)}></input>
 //                 <button onClick={() => this.addItem()}>Add</button>
 //                 <button onClick={()=> this.resetItem()}>Reset</button>
@@ -47,7 +47,7 @@ import React, { useState } from "react"
 // }
 
 //FUNCTION COMPONENT
-export function TodoList(){
+export function TodoList(props){
     const [items, setItems] = useState(['Fare la spesa', 'Guardare il cane', 'Raccogliere le zucchine',])
     const [newItem, setNewItem] = useState('')
 
@@ -75,7 +75,7 @@ export function TodoList(){
     return(
         <div>
             <h3>Todo List</h3>
-            <ul>{items.map((item, index) => <li key={index}>{item}<button onClick={()=>removeItem(index)}>x</button></li>)}</ul>
+            <ul>{props.render(items, removeItem)}</ul>
             <input name='newItem' value={newItem} onChange={(e)=>saveValue(e)}/>
             <button onClick={()=>addItem()}>Add</button>
             <button onClick={()=>clearItem()}>Reset</button>
