@@ -4,9 +4,10 @@ import { Hello } from './Hello'
 import { TodoList } from "./TodoList";
 import { UncontrolledLogin } from "./UncontrolledLogin";
 // import { Welcome } from "./Welcome"
-import { Counter } from "./Counter"
+// import { Counter } from "./Counter"
 import { Login } from "./Login";
 import { Container } from "./Container";
+import { Language } from './Language'
 
 //CLASS COMPONENT
 // export class App extends React.Component {
@@ -48,7 +49,8 @@ export function App(){
                 {(items, removeItem)=> items.map((item, index) => <li key={index}>{item}<button onClick={()=>removeItem(index)}>x</button></li>)}
             </TodoList>
             <Login login={(data)=>onLogin(data)}/>
-            <Counter/>
+            {/* <Counter/> */}
+            <Language/>
         </Container>
     )
 }
