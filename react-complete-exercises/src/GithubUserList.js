@@ -11,6 +11,7 @@ export function GithubUserList(){
 
     function handleFetch(){
         setUsernames([...usernames, username])
+        return setUsername('')
     }
 
     return(
