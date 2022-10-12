@@ -4,12 +4,13 @@ import { Colors } from "./Colors";
 // import { TodoList } from "./TodoList";
 // import { UncontrolledLogin } from "./UncontrolledLogin";
 // import { Welcome } from "./Welcome"
-import { Counter } from "./Counter"
+// import { Counter } from "./Counter"
 import { Login } from "./Login";
 import { Container } from "./Container";
 // import { Language } from './Language'
 // import { Sum } from "./Sum";
 import { ClickCounter } from "./ClickCounter";
+import { GithubUser } from "./GithubUser";
 
 //CLASS COMPONENT
 // export class App extends React.Component {
@@ -52,10 +53,11 @@ export function App(){
             <Colors items={colorsList}/>
             {/* <TodoList>{(items, removeItem)=> items.map((item, index) => <li key={index}>{item}<button onClick={()=>removeItem(index)}>x</button></li>)}</TodoList> */}
             <Login login={(data)=>onLogin(data)}/>
-            <Counter/>
+            {/* <Counter/> */}
             {/* <Language/> */}
             {/* <Sum/> */}
             <ClickCounter onCounterChange={(count)=>onCounterChange(count)}/>
+            <GithubUser username={'CeciliaFabiole'}/>
         </Container>
     )
 }

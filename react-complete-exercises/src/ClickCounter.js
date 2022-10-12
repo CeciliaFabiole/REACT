@@ -26,7 +26,7 @@ export function ClickCounter({onCounterChange}){
 
     useEffect(()=>{
         return onCounterChange(counter)
-    }, [counter])
+    }, [counter, onCounterChange])
 
     function handleCounterIncrement(){
         setCounter(() => counter + 1)
