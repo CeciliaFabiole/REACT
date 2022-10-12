@@ -11,6 +11,7 @@ import { Container } from "./Container";
 // import { Sum } from "./Sum";
 import { ClickCounter } from "./ClickCounter";
 import { GithubUserList } from "./GithubUserList";
+import { HookCounter } from "./HookCounter";
 
 //CLASS COMPONENT
 // export class App extends React.Component {
@@ -58,6 +59,7 @@ export function App(){
             {/* <Sum/> */}
             <ClickCounter onCounterChange={(count)=>onCounterChange(count)}/>
             <GithubUserList/>
+            <HookCounter/>
         </Container>
     )
 }
