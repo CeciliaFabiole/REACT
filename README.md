@@ -71,7 +71,7 @@ Esercizi React
 - useEffect-01 Add a side effect to the ClickCounter component from useState 01 that calls a onCounterChange function with the current value of the counter every time value of the counter changes. The function should be received as a prop.
 - useEffect-02 Rewrite the Counter component from State 1 as a function component and add a side effect that initializes the interval as soon as the component renders, and clears it when the component unmounts.
 - useEffect-03 Create a GithubUser component that fetches the data of the username passed as a prop, and renders some of the data within a div tag. The API to query is https://api.github.com/users/${username}.
-- useEffect-04
+- useEffect-04 Create a GithubUserList component that maintains an array of usernames, showing a GithubUser component for each username entered. The usernames should be added to the array using an input field and a button.
 - custom-hooks-01
 - custom-hooks-02
 - custom-hooks-03

@@ -10,7 +10,7 @@ import { Container } from "./Container";
 // import { Language } from './Language'
 // import { Sum } from "./Sum";
 import { ClickCounter } from "./ClickCounter";
-import { GithubUser } from "./GithubUser";
+import { GithubUserList } from "./GithubUserList";
 
 //CLASS COMPONENT
 // export class App extends React.Component {
@@ -57,7 +57,7 @@ export function App(){
             {/* <Language/> */}
             {/* <Sum/> */}
             <ClickCounter onCounterChange={(count)=>onCounterChange(count)}/>
-            <GithubUser username={'CeciliaFabiole'}/>
+            <GithubUserList/>
         </Container>
     )
 }
