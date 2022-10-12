@@ -73,7 +73,7 @@ Esercizi React
 - useEffect-03 Create a GithubUser component that fetches the data of the username passed as a prop, and renders some of the data within a div tag. The API to query is https://api.github.com/users/${username}.
 - useEffect-04 Create a GithubUserList component that maintains an array of usernames, showing a GithubUser component for each username entered. The usernames should be added to the array using an input field and a button.
 - custom-hooks-01 Create a custom hook useCounter that keeps track of the state of a counter, and returns the current value of the counter as well as three functions to increment, decrement and reset the counter.
-- custom-hooks-02
+- custom-hooks-02 Create a custom hook that keeps track of the state of a controlled form with the username and password inputs, and returns the current value of the inputs as well as an event handler to update either input.
 - custom-hooks-03
 - custom-hooks-04
 - useCallback

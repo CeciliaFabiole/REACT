@@ -12,6 +12,7 @@ import { Container } from "./Container";
 import { ClickCounter } from "./ClickCounter";
 import { GithubUserList } from "./GithubUserList";
 import { HookCounter } from "./HookCounter";
+import { HookLogin } from "./HookLogin";
 
 //CLASS COMPONENT
 // export class App extends React.Component {
@@ -60,6 +61,7 @@ export function App(){
             <ClickCounter onCounterChange={(count)=>onCounterChange(count)}/>
             <GithubUserList/>
             <HookCounter/>
+            <HookLogin login={(data)=>onLogin(data)}/>
         </Container>
     )
 }
