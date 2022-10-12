@@ -75,7 +75,7 @@ Esercizi React
 - custom-hooks-01 Create a custom hook useCounter that keeps track of the state of a counter, and returns the current value of the counter as well as three functions to increment, decrement and reset the counter.
 - custom-hooks-02 Create a custom hook that keeps track of the state of a controlled form with the username and password inputs, and returns the current value of the inputs as well as an event handler to update either input.
 - custom-hooks-03 Extract the logic to fetch a Github user's data from the GithubUser component from useEffect 03 into a custom hook called useGithubUser.
-- custom-hooks-04
+- custom-hooks-04 Modify the useGithubUser hook to return the function to fetch the data of a Github user, along with the data of the user and the error and loading states.
 - useCallback
 - useMemo
 - useRef-02
