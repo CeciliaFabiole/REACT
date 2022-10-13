@@ -1,5 +1,5 @@
 import  React, { useState } from "react";
-import { GithubUser } from "./GithubUser";
+import { Link, Outlet, } from "react-router-dom";
 
 export function GithubUserList(){
     const [usernames, setUsernames] = useState([])
@@ -16,9 +16,11 @@ export function GithubUserList(){
 
     return(
         <div>
-            <ul>{usernames.map((item, index)=><li key={item + index}><GithubUser username={item}/></li>)}</ul>
+            <ul>{usernames.map((item, index)=><li key={item + index}><Link to={item}>{item}</Link></li>)}</ul>
             <input name='username' value={username} onChange={handleChange}/>
             <button onClick={handleFetch}>Ottieni</button>
+            <Outlet/>
         </div>
     )
 }
+//Come faccio ad aggiungere la mia value dell'input al path del link?

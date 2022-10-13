@@ -17,6 +17,7 @@ import { Container } from "./Container";
 // import { CarDetailsForm } from "./CarDetailsForm";
 import { Route, Routes, Link } from "react-router-dom";
 import { ShowGithubUser } from "./ShowGithubUser";
+import { GithubUserList } from "./GithubUserList";
 
 //CLASS COMPONENT
 // export class App extends React.Component {
@@ -75,18 +76,24 @@ export function App(){
                 <Link to='/counter'>Counter</Link>
             </div>
             <div>
-                <Link to='/users/CeciliaFabiole'>User</Link>
+                <Link to='/users'>Users</Link>
             </div>
             <Routes>
                 <Route path='/' element={<Welcome name='Dimitri'/>}/>
+
                 <Route path='/counter' element={<Counter/>}/>
-                <Route path='/users/:username' element={<ShowGithubUser/>}/>
+
                 <Route path="*" element={
                     <div>
                         <p>Page Not Found</p>
                         <Link to="/">Go Home</Link>
                     </div>}>
                 </Route>
+
+                <Route path='users' element={<GithubUserList/>}>
+                    <Route path=':username' element={<ShowGithubUser/>}/>
+                </Route>
+
             </Routes>
         </Container>
     )
