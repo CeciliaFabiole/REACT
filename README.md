@@ -89,7 +89,7 @@ Esercizi React
 - react-router-04 Add three Links within the main App component and use them to navigate to all three routes.
 - react-router-05 Add a Not Found route that renders when a user navigates to a path that does not exist.
 - react-router-06 Add a Route to the users path that shows the GihubUserList component from useEffect 04. Modify it so that instead of showing the GithubUser component for each username entered, it shows a link to a nested route that shows the ShowGithubUser component. In doing so, remove the /users/:username route from the App component, and add a new nested route within the /users route.
-- react-router-07
+- react-router-07 Add an index route to the GithubUserList route that shows the "Add a user and select it" message.
 - swr-01
 - swr-02
 - swr-03

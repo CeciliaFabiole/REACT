@@ -19,8 +19,8 @@ export function GithubUserList(){
             <ul>{usernames.map((item, index)=><li key={item + index}><Link to={item}>{item}</Link></li>)}</ul>
             <input name='username' value={username} onChange={handleChange}/>
             <button onClick={handleFetch}>Ottieni</button>
+            <hr/>
             <Outlet/>
         </div>
     )
 }
-//Come faccio ad aggiungere la mia value dell'input al path del link?
