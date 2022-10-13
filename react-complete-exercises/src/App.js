@@ -15,7 +15,7 @@ import { Container } from "./Container";
 // import { HookLogin } from "./HookLogin";
 // import { FilteredList } from "./FilteredList";
 // import { CarDetailsForm } from "./CarDetailsForm";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Link } from "react-router-dom";
 import { ShowGithubUser } from "./ShowGithubUser";
 
 //CLASS COMPONENT
@@ -68,6 +68,15 @@ export function App(){
             {/* <HookLogin login={(data)=>onLogin(data)}/> */}
             {/* <FilteredList/> */}
             {/* <CarDetailsForm/> */}
+            <div>
+                <Link to='/'>Home</Link>
+            </div>
+            <div>
+                <Link to='/counter'>Counter</Link>
+            </div>
+            <div>
+                <Link to='/users/CeciliaFabiole'>User</Link>
+            </div>
             <Routes>
                 <Route path='/' element={<Welcome name='Dimitri'/>}/>
                 <Route path='/counter' element={<Counter/>}/>
