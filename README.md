@@ -87,7 +87,7 @@ Esercizi React
 - react-router-02 Add a new Route to the /counter path that renders the Counter component from useState 01.
 - react-router-03 Add a new Route to the users/:username path that renders a ShowGithubUser component that receives the username as a path parameter and renders the GithubUser component from useEffect 03 by passing it the received username.
 - react-router-04 Add three Links within the main App component and use them to navigate to all three routes.
-- react-router-05
+- react-router-05 Add a Not Found route that renders when a user navigates to a path that does not exist.
 - react-router-06
 - react-router-07
 - swr-01
