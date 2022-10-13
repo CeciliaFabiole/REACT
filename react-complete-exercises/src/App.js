@@ -4,7 +4,7 @@ import React from "react";
 // import { TodoList } from "./TodoList";
 // import { UncontrolledLogin } from "./UncontrolledLogin";
 import { Welcome } from "./Welcome"
-// import { Counter } from "./Counter"
+import { Counter } from "./Counter"
 // import { Login } from "./Login";
 import { Container } from "./Container";
 // import { Language } from './Language'
@@ -69,6 +69,7 @@ export function App(){
             {/* <CarDetailsForm/> */}
             <Routes>
                 <Route path='/' element={<Welcome name='Dimitri'/>}/>
+                <Route path='/counter' element={<Counter/>}/>
             </Routes>
         </Container>
     )
