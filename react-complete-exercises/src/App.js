@@ -10,10 +10,11 @@ import { Container } from "./Container";
 // import { Language } from './Language'
 // import { Sum } from "./Sum";
 import { ClickCounter } from "./ClickCounter";
-import { GithubUserList } from "./GithubUserList";
-import { HookCounter } from "./HookCounter";
+// import { GithubUserList } from "./GithubUserList";
+// import { HookCounter } from "./HookCounter";
 import { HookLogin } from "./HookLogin";
-import { FilteredList } from "./FilteredList";
+// import { FilteredList } from "./FilteredList";
+import { CarDetailsForm } from "./CarDetailsForm";
 
 //CLASS COMPONENT
 // export class App extends React.Component {
@@ -60,10 +61,11 @@ export function App(){
             {/* <Language/> */}
             {/* <Sum/> */}
             <ClickCounter onCounterChange={(count)=>onCounterChange(count)}/>
-            <GithubUserList/>
-            <HookCounter/>
+            {/* <GithubUserList/> */}
+            {/* <HookCounter/> */}
             <HookLogin login={(data)=>onLogin(data)}/>
-            <FilteredList/>
+            {/* <FilteredList/> */}
+            <CarDetailsForm/>
         </Container>
     )
 }
