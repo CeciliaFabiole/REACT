@@ -1,20 +1,21 @@
 import React from "react";
-import { Colors } from "./Colors";
+// import { Colors } from "./Colors";
 // import { Hello } from './Hello'
 // import { TodoList } from "./TodoList";
 // import { UncontrolledLogin } from "./UncontrolledLogin";
-// import { Welcome } from "./Welcome"
+import { Welcome } from "./Welcome"
 // import { Counter } from "./Counter"
-import { Login } from "./Login";
+// import { Login } from "./Login";
 import { Container } from "./Container";
-import { Language } from './Language'
+// import { Language } from './Language'
 // import { Sum } from "./Sum";
-import { ClickCounter } from "./ClickCounter";
+// import { ClickCounter } from "./ClickCounter";
 // import { GithubUserList } from "./GithubUserList";
 // import { HookCounter } from "./HookCounter";
-import { HookLogin } from "./HookLogin";
+// import { HookLogin } from "./HookLogin";
 // import { FilteredList } from "./FilteredList";
 // import { CarDetailsForm } from "./CarDetailsForm";
+import { Route, Routes } from "react-router-dom";
 
 //CLASS COMPONENT
 // export class App extends React.Component {
@@ -34,38 +35,41 @@ import { HookLogin } from "./HookLogin";
 // }
 
 //FUNCTION COMPONENT
-let colorsList = [
-    {id:1, colore:'rosso'},
-    {id:2, colore:'giallo'},
-    {id:3, colore:'verde'},
-    {id:4, colore:'blu'},
-    {id:5, colore:'viola'},
-]
+// let colorsList = [
+//     {id:1, colore:'rosso'},
+//     {id:2, colore:'giallo'},
+//     {id:3, colore:'verde'},
+//     {id:4, colore:'blu'},
+//     {id:5, colore:'viola'},
+// ]
 
 export function App(){
-    function onLogin(data){
-        console.log('delle info sono state inviate: ' + data.username, data.password, data.remember)
-    }
-    function onCounterChange(count){
-        console.log(`The counter is now ${count}`)
-    }
+    // function onLogin(data){
+    //     console.log('delle info sono state inviate: ' + data.username, data.password, data.remember)
+    // }
+    // function onCounterChange(count){
+    //     console.log(`The counter is now ${count}`)
+    // }
     return(
         <Container title='My App'>
             {/* <Hello/> */}
             {/* <Welcome age={22} name="Cecilia"/> */}
             {/* <UncontrolledLogin/> */}
-            <Colors items={colorsList}/>
+            {/* <Colors items={colorsList}/> */}
             {/* <TodoList>{(items, removeItem)=> items.map((item, index) => <li key={index}>{item}<button onClick={()=>removeItem(index)}>x</button></li>)}</TodoList> */}
-            <Login login={(data)=>onLogin(data)}/>
+            {/* <Login login={(data)=>onLogin(data)}/> */}
             {/* <Counter/> */}
-            <Language/>
+            {/* <Language/> */}
             {/* <Sum/> */}
-            <ClickCounter onCounterChange={(count)=>onCounterChange(count)}/>
+            {/* <ClickCounter onCounterChange={(count)=>onCounterChange(count)}/> */}
             {/* <GithubUserList/> */}
             {/* <HookCounter/> */}
-            <HookLogin login={(data)=>onLogin(data)}/>
+            {/* <HookLogin login={(data)=>onLogin(data)}/> */}
             {/* <FilteredList/> */}
             {/* <CarDetailsForm/> */}
+            <Routes>
+                <Route path='/' element={<Welcome name='Dimitri'/>}/>
+            </Routes>
         </Container>
     )
 }

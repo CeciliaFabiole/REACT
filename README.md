@@ -83,7 +83,7 @@ Esercizi React
 - useContext Rewrite the DisplayLanguage component from Context 02 to be a function component, and access the LanguageContext through the useContext hook.
 
 ## External-Libraries
-- react-router-01
+- react-router-01 Create an App component that wraps a Routes component and add a single Route to the / path that renders the Welcome component from Function Components 01, passing it a name prop. Render the App component within a BrowserRouter component.
 - react-router-02
 - react-router-03
 - react-router-04

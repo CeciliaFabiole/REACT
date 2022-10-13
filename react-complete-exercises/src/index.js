@@ -1,5 +1,5 @@
 import React from "react";
-import {App} from './App'
+import {Root} from './Root'
 import ReactDOM from "react-dom/client";
 import './index.css'
 
@@ -9,5 +9,5 @@ import './index.css'
 
 //ALTRO MODO PER RENDERIZZARE LA NOSTRA APP
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const appElement = <App/>
-root.render(appElement);
+const rootElement = <Root/>
+root.render(rootElement);
