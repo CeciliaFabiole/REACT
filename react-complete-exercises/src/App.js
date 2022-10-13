@@ -7,14 +7,14 @@ import { Colors } from "./Colors";
 // import { Counter } from "./Counter"
 import { Login } from "./Login";
 import { Container } from "./Container";
-// import { Language } from './Language'
+import { Language } from './Language'
 // import { Sum } from "./Sum";
 import { ClickCounter } from "./ClickCounter";
 // import { GithubUserList } from "./GithubUserList";
 // import { HookCounter } from "./HookCounter";
 import { HookLogin } from "./HookLogin";
 // import { FilteredList } from "./FilteredList";
-import { CarDetailsForm } from "./CarDetailsForm";
+// import { CarDetailsForm } from "./CarDetailsForm";
 
 //CLASS COMPONENT
 // export class App extends React.Component {
@@ -58,14 +58,14 @@ export function App(){
             {/* <TodoList>{(items, removeItem)=> items.map((item, index) => <li key={index}>{item}<button onClick={()=>removeItem(index)}>x</button></li>)}</TodoList> */}
             <Login login={(data)=>onLogin(data)}/>
             {/* <Counter/> */}
-            {/* <Language/> */}
+            <Language/>
             {/* <Sum/> */}
             <ClickCounter onCounterChange={(count)=>onCounterChange(count)}/>
             {/* <GithubUserList/> */}
             {/* <HookCounter/> */}
             <HookLogin login={(data)=>onLogin(data)}/>
             {/* <FilteredList/> */}
-            <CarDetailsForm/>
+            {/* <CarDetailsForm/> */}
         </Container>
     )
 }

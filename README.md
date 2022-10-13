@@ -80,7 +80,7 @@ Esercizi React
 - useMemo Create a FilteredList component that receives a list of objects each containing a name, an id and a age prop. The FilteredList component should render only the items of the list whose age is greater than 18, and the filtering should only happen when the list changes. Use useMemo to memoize the filtered list.
 - useRef-01 Modify the Login component from useState 02 to so that the username input is automatically focused when the component renders, by creating a ref with useRef and attaching it to the username input
 - useRef-02 Create a CarDetails uncontrolled form that uses the HTML Form API to allow the user to insert details about a car, such as the model, the year and the color. Allow the form to receive a initialData prop that contains the default values of each input, and reset the form every time the initialData value changes.
-- useContext
+- useContext Rewrite the DisplayLanguage component from Context 02 to be a function component, and access the LanguageContext through the useContext hook.
 
 ## External-Libraries
 - react-router-01

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { languageContext } from "./LanguageContext";
 
 //CLASS COMPONENT
@@ -24,9 +24,10 @@ import { languageContext } from "./LanguageContext";
 
 //FUNCTION COMPONENT
 export function DisplayLanguage(){
+    const language = useContext(languageContext)
     return(
-        <languageContext.Consumer>
-            {(language)=> <h1>La lingua selzionata è : {language}</h1>}
-        </languageContext.Consumer>
+        <div>
+            <h1>La lingua selzionata è : {language}</h1>
+        </div>
     )
 }
