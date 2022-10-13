@@ -16,6 +16,7 @@ import { Container } from "./Container";
 // import { FilteredList } from "./FilteredList";
 // import { CarDetailsForm } from "./CarDetailsForm";
 import { Route, Routes } from "react-router-dom";
+import { ShowGithubUser } from "./ShowGithubUser";
 
 //CLASS COMPONENT
 // export class App extends React.Component {
@@ -70,6 +71,7 @@ export function App(){
             <Routes>
                 <Route path='/' element={<Welcome name='Dimitri'/>}/>
                 <Route path='/counter' element={<Counter/>}/>
+                <Route path='/users/:username' element={<ShowGithubUser/>}/>
             </Routes>
         </Container>
     )

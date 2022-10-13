@@ -85,7 +85,7 @@ Esercizi React
 ## External-Libraries
 - react-router-01 Create an App component that wraps a Routes component and add a single Route to the / path that renders the Welcome component from Function Components 01, passing it a name prop. Render the App component within a BrowserRouter component.
 - react-router-02 Add a new Route to the /counter path that renders the Counter component from useState 01.
-- react-router-03
+- react-router-03 Add a new Route to the users/:username path that renders a ShowGithubUser component that receives the username as a path parameter and renders the GithubUser component from useEffect 03 by passing it the received username.
 - react-router-04
 - react-router-05
 - react-router-06
