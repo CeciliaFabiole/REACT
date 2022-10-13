@@ -13,6 +13,7 @@ import { ClickCounter } from "./ClickCounter";
 import { GithubUserList } from "./GithubUserList";
 import { HookCounter } from "./HookCounter";
 import { HookLogin } from "./HookLogin";
+import { FilteredList } from "./FilteredList";
 
 //CLASS COMPONENT
 // export class App extends React.Component {
@@ -62,6 +63,7 @@ export function App(){
             <GithubUserList/>
             <HookCounter/>
             <HookLogin login={(data)=>onLogin(data)}/>
+            <FilteredList/>
         </Container>
     )
 }
