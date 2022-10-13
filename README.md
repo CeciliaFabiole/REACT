@@ -78,6 +78,7 @@ Esercizi React
 - custom-hooks-04 Modify the useGithubUser hook to return the function to fetch the data of a Github user, along with the data of the user and the error and loading states.
 - useCallback Modify the useCounter custom hook from Custom Hooks 01 to use the useCallback to memoize the functions used to increment, decrement and reset the counter.
 - useMemo Create a FilteredList component that receives a list of objects each containing a name, an id and a age prop. The FilteredList component should render only the items of the list whose age is greater than 18, and the filtering should only happen when the list changes. Use useMemo to memoize the filtered list.
+- useRef-01 Modify the Login component from useState 02 to so that the username input is automatically focused when the component renders, by creating a ref with useRef and attaching it to the username input
 - useRef-02
 - useContext
 

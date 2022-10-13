@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 //CLASS COMPONENT
 // export class Login extends React.Component {
@@ -50,6 +50,11 @@ export function Login({login}){
         remember:false,
     })
 
+    const inputRef = useRef()
+    useEffect(()=>{
+        inputRef.current.focus()
+    },[])
+
     function handleInputs(event){
         event.preventDefault()
         const {name, type, checked, value} = event.target
@@ -74,7 +79,7 @@ export function Login({login}){
     }
     return (
         <div>
-            <input name="username" value={data.username} onChange={(e)=>handleInputs(e)}></input>
+            <input ref={inputRef} name="username" value={data.username} onChange={(e)=>handleInputs(e)}></input>
             <input name="password" type="password" value={data.password} onChange={(e)=>handleInputs(e)}></input>
             <input name="remember" type="checkbox" checked={data.remember} onChange={(e)=>handleInputs(e)}></input>
             <button name="loginButton" type="submit" onClick={()=>login(data)} disabled={data.username==="" && data.password===""} style={MyStyle}>Login</button>
