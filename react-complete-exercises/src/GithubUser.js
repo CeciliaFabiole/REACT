@@ -10,7 +10,7 @@ export function GithubUser({username}){
             {loading && <p>Loading...</p>}
             {error && <h1>There has been an Error</h1>}
             {user && <p>Nome: {user.name}</p>}
-            {user && <p>Username: {user.login}</p>}
+            {user && <p>username: {user.login}</p>}
             {user && <p>ID: {user.id}</p>}
             {user && <p>Bio: {user.bio}</p>}
         </div>
