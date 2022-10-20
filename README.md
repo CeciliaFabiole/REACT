@@ -93,6 +93,7 @@ Esercizi React
 - swr-01 Modify the useGithubUser custom hook from Custom Hooks 03 to use the useSWR hook to fetch the data of a Github user.
 - swr-02 Modify the useGithubUser hook so that, if the username is null, no request is made.
 - swr-03 Modify the useGithubUser hook so that it returns a function to manually refetch the data when invoked.
+- swr-04 Use SWRConfig to set a default value for the fetcher prop of the useSWR hook.
 
 ## redux
 - redux-01
