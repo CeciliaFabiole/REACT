@@ -8,22 +8,17 @@ const fetcher = url => fetch(url).then((response)=>{
     }
     return response.json()
 })
-// const fetcher = async url => {
-//     const res = await fetch(url)
-//     if (!res.ok) {
-//       const error = new Error('An error occurred while fetching the data.')
-//       throw error
-//     }
-//     return res.json()
-// }
 
 export function useGithubUser(username){
-    const {data, error} = useSWR(shouldFetch ? `https://api.github.com/users/${username}` : null, fetcher)
-    // Differenza?
-    // const {data, error} = useSWR(() => shouldFetch ? `https://api.github.com/users/${username}` : null, fetcher)
+    const {data, error, mutate} = useSWR(shouldFetch ? `https://api.github.com/users/${username}` : null, fetcher)
+
+    function handleRefreshUsers(){
+        mutate()
+    }
     return{
         user: data,
         loading: !error && !data,
         error,
+        onRefresh: handleRefreshUsers
     }
 }

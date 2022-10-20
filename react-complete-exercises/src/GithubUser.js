@@ -2,7 +2,7 @@ import React from "react";
 import { useGithubUser } from "./useGithubUser";
 
 export function GithubUser({username}){
-    const {user, error, loading} = useGithubUser(username)
+    const {user, error, loading, onRefresh} = useGithubUser(username)
 
     return(
         <div>
@@ -13,6 +13,7 @@ export function GithubUser({username}){
             {user && <p>username: {user.login}</p>}
             {user && <p>ID: {user.id}</p>}
             {user && <p>Bio: {user.bio}</p>}
+            <button onClick={onRefresh}>Refresh</button>
         </div>
     )
 }

@@ -92,7 +92,7 @@ Esercizi React
 - react-router-07 Add an index route to the GithubUserList route that shows the "Add a user and select it" message.
 - swr-01 Modify the useGithubUser custom hook from Custom Hooks 03 to use the useSWR hook to fetch the data of a Github user.
 - swr-02 Modify the useGithubUser hook so that, if the username is null, no request is made.
-- swr-03
+- swr-03 Modify the useGithubUser hook so that it returns a function to manually refetch the data when invoked.
 
 ## redux
 - redux-01
